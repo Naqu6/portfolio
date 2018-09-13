@@ -39,8 +39,14 @@ body {
 
 .title-container {
 	display: flex;
+	width: 100%;
 }
 
-.title-container > .page-header {
+.title-container > .page-title {
 	margin: 0 auto;
+}
+
+.main-text-content {
+	margin-left: 15%;
+	margin-right: 15%;
 }

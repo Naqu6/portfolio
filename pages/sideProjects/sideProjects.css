@@ -1,0 +1,7 @@
+.side-project .project-header-container {
+	display: flex;
+}
+
+.side-project .project-header-container .project-header {
+	margin: 0 auto;
+} 
