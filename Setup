@@ -1,0 +1,2 @@
+mkdir pages
+touch pages/template.html

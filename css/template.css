@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	font-size: 25px;
+	background-color: rgb(8,61,119);
+	
+	margin: 0;
+	padding: 15px;
+}
+
+.header div {
+	display: inline-block;
+}
+
+.header a {
+	display: inline-block;
+	text-decoration: none;
+
+	margin-left: 15px;
+	margin-right: 15px;
+
+	color: rgb(235, 235, 211);
+}
+
+.header a:hover {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.header-links {
+	float: right;
+}
+
+.title-container {
+	display: flex;
+}
+
+.title-container > .page-header {
+	margin: 0 auto;
+}

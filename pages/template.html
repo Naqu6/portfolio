@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>
+		{{.PageName}}
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="/static/css/template.css" rel="stylesheet">
+
+	<link href="/{{.CssPath}}" rel="stylesheet"> 
+	<script type="text/javascript" src="/{{.JsPath}}"></script>
+<body>
+	<div class="header">
+		<div class="header-title">
+			<a href="/">
+				Ryan Ehrlich
+			</a>
+		</div>
+
+		<div class="header-links">
+			<a href="/about/">
+				ABOUT
+			</a>
+
+			<a href="/sideProjects">
+				PROJECTS
+			</a>
+
+			<a href="/workExpirence">
+				WORK EXPIRENCE
+			</a>
+		</div>
+	</div>
+
+	<div class="main-content">
+		{{.Html}}
+	</div>
+</body>

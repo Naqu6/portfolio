@@ -1,0 +1,22 @@
+#!/bin/bash
+if [ "$1" = "" ]
+	then
+		exit 1
+fi
+
+if [ ! -d "pages" ]
+	then
+		mkdir "pages"
+fi
+
+if [ ! -d "pages/$1" ]
+	then
+		mkdir "pages/$1"
+fi
+
+for extension in "html" "js" "css" "txt"
+	do
+		touch $(python -c "print 'pages/$1/' + '$1'.split('/')[-1] + '.$extension'")
+done
+
+exit 0
