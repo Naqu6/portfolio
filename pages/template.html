@@ -1,41 +1,57 @@
 <html>
-<head>
-	<title>
-		{{.PageName}}
-	</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="/static/css/template.css" rel="stylesheet">
+	<head>
+		<title>
+			{{.PageName}}
+		</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="/static/css/template.css" rel="stylesheet">
 
-	<link href="/{{.CssPath}}" rel="stylesheet"> 
-	<script type="text/javascript" src="/{{.JsPath}}"></script>
-<body>
-	<div class="header">
-		<div class="header-title">
-			<a href="/">
-				Ryan Ehrlich
-			</a>
+		<link href="/{{.CssPath}}" rel="stylesheet"> 
+		<script type="text/javascript" src="/{{.JsPath}}"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-title">
+				<a href="/">
+					Ryan Ehrlich
+				</a>
+			</div>
+
+			<div class="header-links">
+				<a href="/about/">
+					ABOUT
+				</a>
+
+				<a href="/sideProjects">
+					PROJECTS
+				</a>
+
+				<a href="/workExpirence">
+					WORK EXPIRENCE
+				</a>
+			</div>
 		</div>
 
-		<div class="header-links">
-			<a href="/about/">
-				ABOUT
-			</a>
-
-			<a href="/sideProjects">
-				PROJECTS
-			</a>
-
-			<a href="/workExpirence">
-				WORK EXPIRENCE
-			</a>
+		<div class="main-content">
+			{{.Html}}
 		</div>
-	</div>
 
-	<div class="main-content">
-		{{.Html}}
-	</div>
+		<div class="footer">
+			<div class="footer-content">
+				<p class="copyright">
+					&copy; Ryan Ehrlich
 
-	<div class="footer">
+					<p class="copyright-year">
+					</p>
 
-	</div>
-</body>
+					-
+				</p>
+
+				<a class="github-link">
+					Github
+				</a>
+		</div>
+
+		<script type="text/javascript" src="/static/js/main.js"></script>
+	</body>
+</html>

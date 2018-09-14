@@ -1,0 +1,25 @@
+.parallax.main-background {
+	background-image: url("/static/images/work-expirence-background.jpeg");
+	height: 500px;
+}
+
+div.title-container {
+	border: 0;
+}
+
+div.title-container div.page-title {
+	background-color: rgb(158, 43, 37);
+	color: white;
+
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	padding-right: 75px;
+	padding-left: 75px;
+
+	margin-top: 100px;
+}
+
+.work-expirence {
+	margin-top: 75px;
+}

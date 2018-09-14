@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: rgb(255, 248, 240);
 }
 
 * {
@@ -31,6 +32,8 @@ body {
 .header a:hover {
 	display: inline-block;
 	text-decoration: none;
+
+	color: white;
 }
 
 .header-links {
@@ -40,6 +43,13 @@ body {
 .title-container {
 	display: flex;
 	width: 100%;
+	margin-top: 50px;
+	font-size: 35px;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 20px;
 }
 
 .title-container > .page-title {
@@ -49,4 +59,28 @@ body {
 .main-text-content {
 	margin-left: 15%;
 	margin-right: 15%;
+}
+
+.footer {
+	display: flex;
+}
+
+.footer-content {
+	margin: 0 auto;
+}
+
+.footer-content * {
+	display: inline;
+}
+
+.github-link {
+	font-style: italic;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }

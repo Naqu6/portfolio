@@ -1,7 +1,42 @@
+.side-projects {
+	margin-top: 50px;
+}
+
+.side-project {
+	font-size: 15px;
+	line-height: 2;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .side-project .project-header-container {
 	display: flex;
 }
 
 .side-project .project-header-container .project-header {
 	margin: 0 auto;
+	font-size: 20px;
 } 
+
+.parallax.main-background {
+	background-image: url("/static/images/side-projects-background.jpg");
+	height: 500px;
+}
+
+div.title-container {
+	border: 0;
+}
+
+div.title-container div.page-title {
+	background-color: rgb(158, 43, 37);
+	color: white;
+
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	padding-right: 75px;
+	padding-left: 75px;
+
+	margin-top: 100px;
+}
