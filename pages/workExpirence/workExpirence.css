@@ -20,6 +20,49 @@ div.title-container div.page-title {
 	margin-top: 100px;
 }
 
-.work-expirence {
+.work-header-container {
+	padding-bottom: 15px;
+	border-bottom: 3px solid;
+	margin-bottom: 15px;
+	height: 100px;
+}
+
+.work-header-container a {
+	width: 100%;
+}
+
+.work-header-container img {
+	height: 100px;
+}
+
+.company {
+	padding: 25px;
+
 	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.company:nth-child(even) {
+	background-color: rgb(8,61,119);
+	color: white;
+}
+
+.company:nth-child(odd) {
+	color: rgb(8,61,119);	
+}
+
+.job-position {
+	display: flex;
+	line-height: 2;
+	border-bottom: 1px solid;
+}
+
+.job-position .job-information {
+	width: 30%;
+	font-size: 20px;
+}
+
+.job-position .description {
+	width: 70%;
+	text-align: left;
 }
