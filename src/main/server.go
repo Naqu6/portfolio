@@ -136,6 +136,7 @@ func getStaticResources() (map[string]StaticResource) {
 	scripts := directoryContents(SCRIPTS_DIRECTORY)
 	images := directoryContents(IMAGES_DIRECTORY)
 	stylesheets := directoryContents(CSS_DIRECTORY)
+	pdfs := directoryContents(PDF_DIRECTORY)
 
 	for _, scriptPath := range scripts {
 		resources["static/" + scriptPath] = loadStaticResource(scriptPath, JS_CONTEXT, true)
@@ -147,6 +148,10 @@ func getStaticResources() (map[string]StaticResource) {
 
 	for _, stylesheetPath := range stylesheets {
 		resources["static/" + stylesheetPath] = loadStaticResource(stylesheetPath, CSS_CONTEXT, true)
+	}
+
+	for _, pdfPath := range pdfs {
+		resources["pdf/" + pdfPath] = loadStaticResource(pdfPath, PDF_CONTEXT, true)
 	}
 
 	return resources

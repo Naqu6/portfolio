@@ -63,6 +63,9 @@ body {
 
 .footer {
 	display: flex;
+	padding: 35px;
+	background-color: rgba(81, 53, 90);
+	color: white;
 }
 
 .footer-content {
@@ -73,8 +76,17 @@ body {
 	display: inline;
 }
 
-.github-link {
+
+
+.footer-links {
 	font-style: italic;
+}
+
+.footer-links a, .footer-links a:hover {
+	color: white;
+	text-decoration: none;
+	
+	margin: 15px;
 }
 
 .parallax {
