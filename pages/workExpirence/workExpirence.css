@@ -20,6 +20,10 @@ div.title-container div.page-title {
 	margin-top: 100px;
 }
 
+.work-expirence a {
+	color: inherit !important;
+}
+
 .work-header-container {
 	padding-bottom: 15px;
 	border-bottom: 3px solid;
@@ -29,7 +33,6 @@ div.title-container div.page-title {
 
 .work-header-container a {
 	width: 100%;
-	color: black;
 	text-decoration: none;
 }
 
@@ -49,13 +52,13 @@ div.title-container div.page-title {
 	margin-bottom: 75px;
 }
 
-.company:nth-child(odd) {
+div.company:nth-child(odd) {
 	background-color: rgb(8,61,119);
 	color: white;
 }
 
-.company:nth-child(even) {
-	color: rgb(8,61,119);	
+div.company:nth-child(even) {
+	color: rgb(8,61,119);
 }
 
 .job-position {
