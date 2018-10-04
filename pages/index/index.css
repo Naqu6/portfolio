@@ -1,7 +1,20 @@
 .intro {
-	height: 600px;
-	background-color: rgba(158, 43, 37);
+	height: 80vh;
+	background-image: url("/static/images/indexbackground.jpg");
+	background-size: 100% auto;
+
+	background-position-y: 30%;
+	
 	color: white;
+	position: relative;
+}
+
+.background-gradient {
+	background-color: rgba(158, 43, 37, .75);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .intro-text-container {
@@ -21,12 +34,14 @@
 .portfolio-container {
 	font-size: 25px;
 	padding: 25px;
-	margin-top: 50px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .portfolio {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 25px;
 }
 
 .bucket-header {
@@ -45,6 +60,9 @@
 
 	cursor: pointer;
 	background-size: cover;
+
+	user-select: none;
+	-moz-user-select: none;
 }
 
 .portfolio-card .project-tagline {
@@ -56,7 +74,7 @@
 	top: 0;
 	left: 0;
 
-	background-color: rgba(8, 61, 119, .65);
+	background-color: rgba(8, 61, 119, 0.75);
 	
 	text-align: center;
 	width: 250px;
@@ -128,9 +146,15 @@
 	width: 350px;
 
 	background-size: cover;
+
+	float: left;
+	margin-right: 35px;
+	margin-bottom: 35px;
 }
 
 .bio {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -138,7 +162,7 @@
 .bio-text {
 	color: white;
 	line-height: 2;
-	font-size: 15px;
+	font-size: 17.5px;
 }
 
 .bio-text a {
