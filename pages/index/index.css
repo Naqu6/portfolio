@@ -43,6 +43,7 @@
 	border: 1px solid;
 	font-size: 20px;
 
+	cursor: pointer;
 	background-size: cover;
 }
 
@@ -55,15 +56,18 @@
 	top: 0;
 	left: 0;
 
-	background-color: rgba(8, 61, 119, .5);
+	background-color: rgba(8, 61, 119, .65);
 	
 	text-align: center;
 	width: 250px;
 }
 
-.tagline-text {
+.tagline-content {
 	position: relative;
 	padding: 15px;
+	color: white;
+	line-height: 2;
+	user-select: none;
 }
 
 .portfolio-card:hover .project-tagline {
@@ -72,4 +76,71 @@
 
 .portfolio-card[portfolio-name="fastflying"] {
 	background-image: url("/static/images/fastflying.png");
+}
+
+.portfolio-card[portfolio-name="smsinternet"] {
+	background-image: url("/static/images/smsinternet.jpg");
+}
+
+.portfolio-card[portfolio-name="taplytics"] {
+	background-image: url("/static/images/taplyticsSquare.png");
+	background-position-x: -10px;
+}
+
+.portfolio-card[portfolio-name="freelancing"] {
+	background-image: url("/static/images/work-expirence-background.jpeg");
+}
+
+.portfolio-card[portfolio-name="league"] {
+	background-image: url("/static/images/OCR.png");
+	background-position-y: -30px;
+}
+
+.portfolio-card[portfolio-name="hip"] {
+	background-image: url("/static/images/hipbackground.jpeg");
+}
+
+.portfolio-card[portfolio-name="ideo"] {
+	background-image: url("/static/images/ideobackground.jpg");
+}
+
+.portfolio-card[portfolio-name="robotics"] {
+	background-image: url("/static/images/roboticsbackground.png");
+}
+
+.portfolio-card[portfolio-name="readinglog"] {
+	background-image: url("/static/images/readinglogbackground.jpg");
+}
+
+.about {
+	background-color: rgb(8,61,119);
+	margin-top: 25px;
+
+	padding: 25px;
+}
+
+.bio-image {
+	border-radius: 50%;
+
+	background-image: url("/static/images/ryan.jpg");
+
+	height: 350px;
+	width: 350px;
+
+	background-size: cover;
+}
+
+.bio {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.bio-text {
+	color: white;
+	line-height: 2;
+	font-size: 15px;
+}
+
+.bio-text a {
+	color: white !important;
 }
