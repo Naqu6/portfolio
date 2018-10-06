@@ -1,11 +1,32 @@
-.page-header {
-	margin-top: 25px;
-	padding: 15px;
-	border-bottom: 1px solid black;
-	text-align: center;
-	
+.main-content {
 	margin-left: 15%;
 	margin-right: 15%;
+} 
 
+.page-header {
+	margin-top: 25px;
+	margin-bottom: 25;
+	padding: 15px;
+	border-bottom: 2px solid black;
+	text-align: center;
 	font-size: 35px;
+}
+
+div.project-description {
+	font-size: 15px;
+	line-height: 2.5;
+
+	font-family: 'Crimson Text', serif;
+	text-indent: 25px;
+}
+
+div.subhead {
+	font-size: 17.5px;
+	padding: 25px;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+.project-description {
+	margin-bottom: 150px;
 }

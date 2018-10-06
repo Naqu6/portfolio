@@ -1,0 +1,68 @@
+<div class="page-header">
+	Utilizing Software to Improve Palo Alto's Mental Health
+</div>
+
+<div class="project-description">
+
+	<p>
+		In the recent past, my community has had a significant problem with mental health. Students often felt overloaded and as if they had no one to talk to. This poor environment students learned in often had disastrous results on their personal lives. It was not uncommon for our community to see multiple student suicides a year.
+	</p>
+
+	<p>
+		The president of the Heroic Imagination Project's Palo Alto branch, a friend of mine, set out to try to improve the mental resilience of our community. The Heroic Imagination Project is a A 501(c)3 non-profit organization whose goal is to strengthen high school student's emotional resilience.
+	</p>
+
+	<p>
+		They had a large amount of material to present to students, and they needed a way to gauge how effective certain material and certain questions were. 
+		It initially sounded like they just wanted form submission software. However, after hours of meetings, it became clear that they wanted truly interactive software that fit with their unconventional presentation style and would allow them to immediately see results during different sections of the presentations to help them understand how responsive and effective people were to different information and different types of questions.
+		<br>
+		<br>
+		<!-- The question was this: how do you make an supplement to a presentation that is effective at collecting user data without being distracting? -->
+	</p>
+
+	<div class="subhead">
+		User Experience Design
+	</div>
+
+	<p>
+		Because  the ultimate goal of the software was is to be able to increase the effectiveness of the content, my goal was to make sure that the user was interacting with the content and presentation as much as possible and the software as little as possible. My design revolved around presenting the user with using familiar, simple components so that it wouldn’t even cross their mind that they were entering the information in on a website rather than writing it on a piece of paper. 
+	</p>
+
+	<p>
+
+		I designed the user interface to flow with the presentation, advancing as the presenter moved through their slide deck, ensuring the participants would stay attentive to the presentation. From the presenter perspective, I also kept it simple. Data about the process of each participant was shown in a way that was as non-intrusive as possible and the software flowed with the presentation slides themselves.
+
+	</p>
+
+	<div class="subhead">
+
+		Technical Design
+
+	</div>
+
+	<p>
+
+		From a technical perspective, I built the backend server around Python’s Flask Library and the Frontend using Jquery and Bootstrap. The stack was not especially complex but was incredibly robust, with the presentation data being stored both in memory and in file format. Because of the nature of the presenter and participant where the presenter was reading data while the participants were writing data, I utilized mutual exclusion locks and multiple threads to ensure that no data would be lost and the program was as effective as possible. 
+
+	</p>
+
+	<div class="subhead">
+
+	Real World Implementation
+
+	</div>
+
+	<p>
+		Initially, local students attended focus groups and interacted with with this software. Using the data I designed, the President and Vice President were able to clearly see what questions and supplements were engaging and furthered the discussion they were starting and what questions were simply ineffective.
+
+	</p>
+
+	<p>
+		They were very quickly able to process mass amounts of data and determine the most effective information to present to our specific community. The President and Vice President of the Heroic Imagination Project presented to School Board Officials, and the curriculum was integrated into a graduation required class at the local high school.
+
+	</p>
+
+	<p>
+		I like building projects like this where building software isn’t the end goal. At some level, they’re only so much you can do with changing the color of microscopic LEDs on a computer screen. Seeing the positive impacts this project has had on my community has an impact on me. Knowing I've used my engineering to do something as significant as helping prevent suicides makes me is the knowledge that drives my interest in engineering.
+	</p>
+</div>
