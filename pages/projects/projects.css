@@ -30,3 +30,25 @@ div.subhead {
 .project-description {
 	margin-bottom: 150px;
 }
+
+.project-description img {
+	height: 500px;
+	margin: 20px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+img.small {
+	height: 300px;
+}
+
+img.skinny {
+	height: auto;
+	width: 350px;
+}

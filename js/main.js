@@ -23,9 +23,11 @@ document.querySelector(`a[href="/#resume"]`).addEventListener("click", (event) =
 	scrollToDiv(event, "#resume");
 });
 
-document.querySelector(".see-projects").addEventListener("click", () => {
-	document.querySelector("#portfolio-container").scrollIntoView({
-		block: 'center',
-		behavior: 'smooth'
+if (window.location.pathname == "/") {
+	document.querySelector(".see-projects").addEventListener("click", () => {
+		document.querySelector("#portfolio-container").scrollIntoView({
+			block: 'center',
+			behavior: 'smooth'
+		});
 	});
-});
+}
