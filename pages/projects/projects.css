@@ -52,3 +52,19 @@ img.skinny {
 	height: auto;
 	width: 350px;
 }
+
+img.medium {
+	height: auto;
+	width: 600px;
+}
+
+.demo-image-container {
+	width: 100%;
+	height: 100vh;
+	margin: 5%;
+}
+
+.demo-image-container img {
+	width: 100%
+	height: auto;
+}
