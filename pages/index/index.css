@@ -1,9 +1,7 @@
 .intro {
 	height: 80vh;
-	background-image: url("/static/images/indexbackground.jpg");
+	background-image: url("/static/images/yosemite_background.jpg");
 	background-size: 100% auto;
-
-	background-position-y: 30%;
 	
 	color: white;
 	position: relative;
@@ -193,4 +191,57 @@
 	background-color: rgb(158,43,37);
 
 	color: white;
+}
+
+.contact {
+	padding: 75px;
+}
+
+.contact .contact-header {
+	font-size: 35px;
+	text-align: center;
+}
+
+.contact textarea {
+	width: 70%;
+	height: 350px;
+	font-size: 15px;
+
+	padding: 20px;
+	resize: none;
+
+	outline: none;
+
+	margin: 100px 15% 50px 15%;
+}
+
+.contact .button-container {
+	display: flex;
+	margin-top: 100px;
+}
+
+.contact .submit-button {
+	margin: 0 auto;
+
+	padding: 25px;
+	font-size: 25px;
+
+	background-color: rgb(158, 43, 37);
+	color: white;
+
+	cursor: pointer;
+}
+
+.contact .submit-button:hover {
+	color: rgb(158, 43, 37);
+	background-color: white;
+}
+
+.contact-success {
+	opacity: 0;
+	transition: 0.5s;
+
+	text-align: center;
+
+	margin: 25px;
 }

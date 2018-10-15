@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
+	"os"
 	"text/template"
 )
 
@@ -177,6 +178,24 @@ func showPage(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintf(w, html)
 			return
 		}
+	} else if path == "contact" {
+		queryValues := r.URL.Query()
+
+		messageArray, _ := queryValues["message"]
+
+		message := "\n"
+
+		for _, part := range messageArray {
+			message += part
+		}
+
+		file, _ := os.OpenFile("contact.txt", os.O_APPEND|os.O_WRONLY, 0644)
+
+		defer file.Close()
+
+		fmt.Fprintf(file, message)
+
+		fmt.Fprintf(w, "")
 	}
 
 	if splitUrl[0] == "static" {
