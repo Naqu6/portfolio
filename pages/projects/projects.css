@@ -73,3 +73,10 @@ img.medium {
 
 	display: block;
 }
+
+img.sms-internet-image {
+	width: 35%;
+	height: auto;
+	margin: 15px;
+	float: right;
+}
