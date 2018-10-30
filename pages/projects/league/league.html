@@ -4,7 +4,7 @@
 
 <div class="project-description">
 	<p>
-		A large part of League’s business is managing health and wellness benefits for other companies. Rather than submitting paper claims, claims are submitted digital claims using League’s mobile application or website. Although these claims are faster than traditional insurance claims, they still can take a few days for a customer care agents to process. The goal of my project was to improve the efficiency of the claims processing.
+		A large part of League’s business is managing health and wellness benefits for other companies. Rather than submitting paper claims, claims are submitted digitally using League’s mobile application or website. Although these claims are faster than traditional insurance claims, they still can take a few days for a customer care agent to process. The goal of my project was to improve the efficiency of the claims processing.
 	</p>
 
 	<div class="subhead">
@@ -12,7 +12,7 @@
 	</div>
 
 	<p>
-		The first step of this project was determining what was the most effective solution to the problem. I talked with the Director of Business Operations to determine what was the most time consuming part of processing these receipts. We decided that the most effective initial step would be to build a computer vision program that would be able to pull key information from images of health care receipts
+		The first step of this project was determining the most effective solution to the problem. I talked with the Director of Business Operations to determine what was the most time consuming part of processing these receipts. We decided that the most effective initial step would be to build a computer vision program that would be able to pull key information from images of health care receipts.
 
 	</p>
 
@@ -23,15 +23,15 @@
 	<img class="left" src="/static/images/OCR.png">
 
 	<p> 
-		When a claim was submitted, the code would scan the image and extract the information about the health claim. A digital image is, at its core, a matrix containing matrices of numbers. The first step is pre-processing the image: removing noise and backgrounds from the image. I utilized a <a href="http://people.csail.mit.edu/sparis/bf_course/">Mean Gaussian Filter</a> to remove the noise. Once the noise had been removed, a binary matrix represents the image. Then, I had the program group the relevant information into sub-sections for text parsing. I now had sections of pixels ready to be turned into text.
+		When a claim was submitted, the code would scan the image and extract the information about the health claim. A digital image is, at its core, a matrix containing matrices of numbers. The first step is pre-processing the image: removing noise and backgrounds from the image. I utilized a <a href="http://people.csail.mit.edu/sparis/bf_course/" target="_blank">Mean Gaussian Filter</a> to remove the noise. Once the noise had been removed, a binary matrix represents the image. Then, I had the program group the relevant information into sub-sections for text parsing. I now had sections of pixels ready to be turned into text.
 	</p>
 
 	<p>
-		Converting pixels into text is a process called optical character recognition, or OCR. I experimented with two ways of doing this. The first way we tried was “training” our program with test data images where we already knew the text. However, because all of the health receipts are protected under <a href="https://www.hhs.gov/hipaa/index.html">HIPAA</a>, the production logging and data security requirements are extraordinarily strict, so using production data as training data was not a viable option.
+		Converting pixels into text is a process called optical character recognition, or OCR. I experimented with two ways of doing this. The first way we tried was “training” our program with test data images where we already knew the text. However, because all of the health receipts are protected under <a href="https://www.hhs.gov/hipaa/index.html" target="_blank">HIPAA</a>, the production logging and data security requirements are extraordinarily strict, so using production data as training data was not a viable option.
 	</p> 
 
 	<p>
-		Instead of using in-house OCR software, for the initial prototype I decided to a standalone OCR library. Using a library like this still allowed us to help the program improve and didn’t require a significant amount of test data.
+		Instead of using in-house OCR software, for the initial prototype I decided to use a standalone OCR library. Using a library like this still allowed the program to improve and didn’t require a significant amount of test data.
 	</p>
 
 	<p>
@@ -45,17 +45,17 @@
 	<img class="right" src="/static/images/cvnotebook.JPG">
 
 	<p>
-		Once the CTO and Director of Business Development were happy with the effectiveness of the software, we implemented the software to pre-fill the form fields for the customer care agent when validating receipts. The first iteration of the software wasn’t very effective. Due to the inaccuracies in the OCR, the health care provider was often found incorrectly. However, the date and total were found correct an appropriate percentage of the time. An additional drawback was how highly resource intensive the OCR and image processing was on the production servers. 
+		Once the CTO and Director of Business Development were happy with the effectiveness of the software, we implemented the software to pre-fill the form fields for the customer care agent when validating receipts. The first iteration of the software wasn’t very effective. Due to the inaccuracies in the OCR, the health care provider was often found incorrectly. However, the date and total were usually found correctly. An additional drawback was how highly resource intensive the OCR and image processing was on the production servers. 
 	</p>
 
 	<p>
-		In addition to using computer vision software, I helped design and build a more effective user interface tools for the customer support agents. We went through multiple iterations of interfaces and determined what would show the most pertinent and useful information.
+		In addition to using computer vision software, I helped design and build a more effective user interface for the customer support agents. We went through multiple iterations of interfaces and determined what would show the most pertinent and useful information.
 	</p>
 
 	<p>
-		Because of the inaccuracies of the OCR Library, I decided to outsource the OCR. Rather than converting the images to text on League's servers, we would use a 3rd party service and parse the receipts ourselves. 
+		Because of the inaccuracies of the OCR Library, I decided to outsource the OCR. Rather than converting the images to text on League's servers, we would use a third party service and parse the receipts ourselves.
 
-		I completely rewrote the vision software within our the back-end application, rather than the initial standalone micro-service. It was significantly more efficient and cost effective. Thorough testing clearly showed that this was the better solution, and we decided it was ready to be implemented in a production environment. 
+		I completely rewrote the vision software within the back-end application, instead of the initial standalone micro-service. It was significantly more efficient and cost effective. Thorough testing clearly showed that this was the better solution, and we decided it was ready to be implemented in a production environment. 
 	</p>
 
 	<div class="subhead">
