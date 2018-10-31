@@ -5,7 +5,7 @@ function scrollToDiv(event, selector) {
 		event.preventDefault();
 
 		document.querySelector(selector).scrollIntoView({
-			block: 'center',
+			block: 'start',
 			behavior: 'smooth'
 		});
 	}
@@ -26,7 +26,7 @@ document.querySelector(`a[href="/#contact"]`).addEventListener("click", (event) 
 if (window.location.pathname == "/") {
 	document.querySelector(".see-projects").addEventListener("click", () => {
 		document.querySelector("#portfolio-container").scrollIntoView({
-			block: 'center',
+			block: 'start',
 			behavior: 'smooth'
 		});
 	});
